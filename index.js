@@ -10,10 +10,11 @@ const port = 3000;
 // Setup MySQL connection
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'username',
-  password: 'password',
+  user: 'username',     // Ganti dengan nama pengguna MySQL Anda
+  password: 'password', // Ganti dengan kata sandi MySQL Anda
   database: 'todo_app_db',
 });
+
 
 db.connect(err => {
   if (err) throw err;

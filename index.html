@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+</head>
+<body>
+  <h1>Todo App</h1>
+
+  <h2>Create User</h2>
+  <form id="createUserForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <button type="button" onclick="createUser()">Create User</button>
+  </form>
+
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label for="loginUsername">Username:</label>
+    <input type="text" id="loginUsername" required>
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" required>
+    <button type="button" onclick="login()">Login</button>
+  </form>
+
+  <h2>Create Todo</h2>
+  <form id="createTodoForm">
+    <label for="todoTask">Task:</label>
+    <input type="text" id="todoTask" required>
+    <button type="button" onclick="createTodo()">Create Todo</button>
+  </form>
+
+  <h2>Todo List</h2>
+  <ul id="todoList"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
